@@ -1,0 +1,22 @@
+{
+  "name": "yachtly-full-stack-dev-test-irfan",
+  "version": "1.0.0",
+  "description": "Yachtly Full-Stack Developer Screening Test Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soetedja/yachtly-full-stack-dev-test-irfan.git"
+  },
+  "keywords": [
+    "\u001b[A\u001b[A\u001b[B\u001b[B"
+  ],
+  "author": "Irfan Suteja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soetedja/yachtly-full-stack-dev-test-irfan/issues"
+  },
+  "homepage": "https://github.com/soetedja/yachtly-full-stack-dev-test-irfan#readme"
+}
