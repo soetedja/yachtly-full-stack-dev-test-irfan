@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  div(ng-controller="userListController")
+    div(class='')
+      h1= title
+      hr
+      <a href="/user/add" class="btn btn-small btn-primary">Create New User</a>
+      table(class="table table-striped")
+        thead
+          tr
+            th Name
+            th Email
+            th Phone Number
+            th Address
+            th Action
+        tbody
+          tr(ng-repeat="(key, value) in users")
+            td {{value.name}}
+            td {{value.email}}
+            td {{value.phoneNumber}}
+            td {{value.address}}
+            td
+              <a href="/user/edit/{{value.userID}}" class="btn btn-small btn-primary">Edit</a>
+              input(id='delete{{value.userID}}', type='button', value='Delete',class="btn btn-small btn-danger" ng-click="delete(value.userID)")
+  </tbody>

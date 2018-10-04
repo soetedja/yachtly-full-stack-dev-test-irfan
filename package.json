@@ -1,22 +1,19 @@
 {
   "name": "yachtly-full-stack-dev-test-irfan",
-  "version": "1.0.0",
-  "description": "Yachtly Full-Stack Developer Screening Test Application",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soetedja/yachtly-full-stack-dev-test-irfan.git"
-  },
-  "keywords": [
-    "\u001b[A\u001b[A\u001b[B\u001b[B"
-  ],
-  "author": "Irfan Suteja",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soetedja/yachtly-full-stack-dev-test-irfan/issues"
-  },
-  "homepage": "https://github.com/soetedja/yachtly-full-stack-dev-test-irfan#readme"
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pg": "^7.5.0",
+    "pg-hstore": "^2.3.2",
+    "pug": "^2.0.0-beta11",
+    "sequelize": "^4.39.0"
+  }
 }

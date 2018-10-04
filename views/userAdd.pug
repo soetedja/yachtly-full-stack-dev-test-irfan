@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  div(ng-controller="userAddController")
+    div(class='span8')
+      h1= title
+      hr
+      form(action='',method='post', class="form-horizontal")
+        div(class="control-group")
+          label(class="control-label" for="name") Name
+          div(class="controls")
+            input(id='userID',type='hidden',value='',placeholder='Name', ng-model='entity.userID' name='userID', class='input-block-level')
+            input(id='name',type='text',value='',placeholder='Name', ng-model='entity.name' name='name', class='input-block-level')
+        div(class="control-group")
+          label(class="control-label" for="email") Email
+          div(class="controls")
+            input(id='email',type='text',value='',placeholder='email@email.com',name='email', ng-model='entity.email', class='input-block-level')
+        div(class="control-group")
+          label(class="control-label" for="phoneNumber") Phone number
+          div(class="controls")
+            input(id='phoneNumber',type='text',value='',placeholder='Phone number',name='phoneNumber', class='input-block-level', ng-model='entity.phoneNumber')
+        div(class="control-group")
+          label(class="control-label" for="address") Address
+          div(class="controls")
+            textarea(id='address',type='text',value='',placeholder='Address',name='address', class='input-block-level', ng-model='entity.address')
+            hr
+            input(id='btnSubmit', type='button',value='Submit',ng-click="submitForm()", class="btn  btn-primary")
+            <a href="/users" class="btn btn-default">Cancel</a>
+            //- button.btn(ng-click="submitForm()" title="Submit Form") Submit
+  
