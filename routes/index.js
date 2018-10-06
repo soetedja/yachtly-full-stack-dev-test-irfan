@@ -18,4 +18,7 @@ router.get('/user/edit/:id', function(req, res, next) {
   res.render('userAdd', { title: 'User Edit' });
 });
 
+router.get('/app', function(req, res, next) {
+  res.render('app', { title: 'App' });
+});
 module.exports = router;

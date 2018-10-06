@@ -19,7 +19,8 @@ function userServices($http, $q) {
             method: 'GET',
             url: "http://localhost:3000/user/" + $id
         }).then(function (response){
-            defer.resolve(response);
+            if(response.data.errors !== undefined) alert(response.data.errors[0].message)
+            else defer.resolve(response);
           },function (error){
             defer.reject(error);
           })
@@ -32,7 +33,8 @@ function userServices($http, $q) {
             method: 'GET',
             url: "http://localhost:3000/user"
         }).then(function (response){
-            defer.resolve(response);
+            if(response.data.errors !== undefined) alert(response.data.errors[0].message)
+            else defer.resolve(response);
           },function (error){
             defer.reject(error);
           })
@@ -49,7 +51,8 @@ function userServices($http, $q) {
                 'Content-Type': 'application/x-www-form-urlencoded'
             }
         }).then(function (response){
-          defer.resolve(response);
+            if(response.data.errors !== undefined) alert(response.data.errors[0].message)
+            else defer.resolve(response);
         },function (error){
           defer.reject(error);
         })
@@ -67,7 +70,8 @@ function userServices($http, $q) {
                 'Content-Type': 'application/x-www-form-urlencoded'
             }
         }).then(function (response){
-            defer.resolve(response);
+            if(response.data.errors !== undefined) alert(response.data.errors[0].message)
+            else defer.resolve(response);
           },function (error){
             defer.reject(error);
           })
@@ -80,7 +84,8 @@ function userServices($http, $q) {
             method: 'DELETE',
             url: "http://localhost:3000/user/" + $id
         }).then(function (response){
-            defer.resolve(response);
+            if(response.data.errors !== undefined) alert(response.data.errors[0].message)
+            else defer.resolve(response);
           },function (error){
             defer.reject(error);
           })
