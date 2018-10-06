@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Dploy' });
+  res.render('index', { title: 'Dploy Test' });
 });
 
 router.get('/users', function(req, res, next) {
@@ -18,7 +18,7 @@ router.get('/user/edit/:id', function(req, res, next) {
   res.render('userAdd', { title: 'User Edit' });
 });
 
-router.get('/app', function(req, res, next) {
+router.get('/app*', function(req, res, next) {
   res.render('app', { title: 'App' });
 });
 module.exports = router;

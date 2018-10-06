@@ -7,7 +7,8 @@ const Main = () => (
   <div class="col-lg-9">
     <Switch>
       <Route exact path='/app' component={UserList}/>
-      <Route path='/app/add' component={UserCreate}/>
+      <Route exact path='/app/list' component={UserList}/>
+      <Route path='/app/create' component={UserCreate}/>
     </Switch>
   </div>
 )
