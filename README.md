@@ -21,7 +21,7 @@ http://localhost:3000/users
 
 
 
-## React+ Bootstrap4 app
+## React + Bootstrap4 + Webpack app
 ```
 http://localhost:3000/app
 ```
